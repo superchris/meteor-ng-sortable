@@ -1,17 +1,12 @@
 Package.describe({
   name: 'superchris:ng-sortable',
-  summary: ' /* Fill me in! */ ',
-  version: '1.0.0',
-  git: ' /* Fill me in! */ '
+  summary: 'ng-sortable drag drop directive',
+  version: '1.1.5',
+  git: ''
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.addFiles('superchris:ng-sortable.js');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('superchris:ng-sortable');
-  api.addFiles('superchris:ng-sortable-tests.js');
+  api.addFiles('ng-sortable/dist/ng-sortable.js', "client");
+  api.addFiles('ng-sortable/dist/ng-sortable.css', "client");
 });
